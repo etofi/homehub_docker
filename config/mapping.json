@@ -2,6 +2,10 @@
     "mapping": {
         "Aktoren": [
             {
+                "name": "HmIP-USBSM",
+                "icon": "control_switch_m_4.png"
+            },
+            {
                 "name": "HmIP-MOD-OC8",
                 "icon": "control_switch_m_4.png"
             },		
@@ -649,8 +653,8 @@
                 "name": "HMIP-WRC2",
                 "icon": "control_switch_m_4.png"
             },
-                        {
-                "name": "HMIP-WRC6",
+            {
+                "name": "HmIP-WRC6",
                 "icon": "control_switch_m_4.png"
             },            
             {
@@ -663,6 +667,14 @@
             },
             {
                 "name": "HM-RC-19",
+                "icon": "it_remote.png"
+            },
+            {
+                "name": "HM-RC-12",
+                "icon": "it_remote.png"
+            },
+            {
+                "name": "HM-RC-12-B",
                 "icon": "it_remote.png"
             },
             {
@@ -679,6 +691,10 @@
             },
             {
                 "name": "HM-RC-8",
+                "icon": "it_remote.png"
+            },
+            {
+                "name": "HmIP-WRC2",
                 "icon": "it_remote.png"
             },
             {

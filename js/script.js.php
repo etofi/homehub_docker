@@ -153,6 +153,7 @@ var updateDatapoints = function () {
 						$('[data-id="' + ise_id + '"]').html("<img src='icon/red_dot.png'>");
 					 }
 					 break;
+                    case 'HmIP-USBSM':
                     case 'ELV-SH-BS2':
                     case 'HMIP-PSM':
                     case 'HMIP-PS':
@@ -2656,6 +2657,8 @@ var updateDatapoints = function () {
                     case 'HM-RC-19-B':
                     case 'HM-RC-19-SW':
                     case 'HM-RC-19':
+                    case 'HM-RC-12':
+                    case 'HM-RC-12-B':
                     case 'HM-RC-4-2':
                     case 'HM-RC-4-B':
                     case 'HM-RC-4':   
@@ -2967,4 +2970,3 @@ function startImport() {
     window.clearTimeout(timer);
     window.location = "?seite=Import";
 }
-
