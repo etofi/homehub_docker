@@ -256,7 +256,7 @@ function ioBroker($component)
 			.'<div class="form-inline">'
 			.'<div class="input-group">'
 			.'<input type="text" name="38488" class="form-control" placeholder="Text eingeben"  id="'.$iseWert.'submit">'
-			.'<span class="input-group-btn"><button class="btn btn-primary '.$operate.'" data-datapoint="'. $iseModus[$i] .'" data-set-id="'.$iseWert.'"  data-api="'.$iseAPI.'">OK</button></span>'
+			.'<span class="input-group-btn"><button data-toggle="collapse" data-target="#' . $modalId . '" class="btn btn-primary '.$operate.'" data-datapoint="'. $iseModus[$i] .'" data-set-id="'.$iseWert.'"  data-api="'.$iseAPI.'">OK</button></span>'
 			.'</div></div></div></div>';
 			}
 
@@ -276,7 +276,16 @@ function ioBroker($component)
 	}
 	
 		 
-
+   if($presets != "")
+   {
+	   $presets = 		 '<div class="hh2 collapse" id="' . $modalId . '">'
+				. '<div class="row text-center">'
+                    . '<div class="btn-group">'
+                        .$presets
+                    . '</div>'
+                . '</div>'
+				. '</div>';
+   }
    
    return '<div class="hh"  style=\'border-left-color: '.$component['color'].'; border-left-style: solid;\'>'
 					.'<div>'
@@ -287,13 +296,7 @@ function ioBroker($component)
                     . '</div>'
                     . '<div class="clearfix"></div>'
 					
-					 .'<div class="hh2 collapse" id="' . $modalId . '">'
-				. '<div class="row text-center">'
-                    . '<div class="btn-group">'
-                        .$presets
-                    . '</div>'
-                . '</div>'
-				. '</div>'
+			.$presets
 				
                 . '</div>'
 
